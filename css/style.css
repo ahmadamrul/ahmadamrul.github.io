@@ -210,6 +210,28 @@ header .navbar ul li a:hover{
     font-size: 2rem;
     color: #fff;
 }
+.about .imagelogo {
+    display: flex;
+    justify-content: space-between; /* Agar item berada di sebelah kiri dan kanan */
+    align-items: center; /* Agar item berada di tengah secara vertikal */
+}
+
+.about .imagelogo .item {
+    text-align: center;
+    margin: 10px;
+}
+
+.about .imagelogo img {
+    width: 60px; /* Sesuaikan ukuran gambar sesuai keinginan Anda */
+    margin-bottom: 5px; /* Sesuaikan margin antara gambar dan teks */
+}
+
+.about .imagelogo p {
+    color: #fff; /* Sesuaikan warna teks */
+    margin: 0; /* Hilangkan margin default pada teks */
+}
+
+
 .education .box-container {
     display: 1;
     align-items: center;

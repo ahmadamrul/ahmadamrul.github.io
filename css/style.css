@@ -523,4 +523,7 @@ footer a{
     text-align: center;
     margin: 10px auto; /* Pusatkan elemen dan atur margin */
     }
+    .footer{
+        width: 100%; /* Sesuaikan lebar elemen pada layar kecil */
+    }
 }

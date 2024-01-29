@@ -497,6 +497,9 @@ footer a{
         height: auto; /* Biarkan tinggi gambar disesuaikan secara otomatis */
         margin-bottom: 10px; /* Atur margin bawah untuk gambar */
     }
+    .footer{
+        width: 100%; /* Sesuaikan lebar elemen pada layar kecil */
+    }
 }
 @media (max-width:400px){
     header {

@@ -136,7 +136,7 @@ header .navbar ul li a:hover{
 #menu{
     position: fixed;
     top: 2rem;right: 2rem;
-    background-color: #7FC6A4;
+    background-color: #5D737E;
     color: #fff;
     cursor: pointer;
     font-size: 2.5rem;
@@ -222,8 +222,10 @@ header .navbar ul li a:hover{
 }
 
 .about .imagelogo img {
-    width: 60px; /* Sesuaikan ukuran gambar sesuai keinginan Anda */
+   width: 60px;/* Sesuaikan ukuran gambar sesuai keinginan Anda */
     margin-bottom: 5px; /* Sesuaikan margin antara gambar dan teks */
+    max-width: 100%;
+    height: auto;
 }
 
 .about .imagelogo p {
@@ -414,6 +416,29 @@ padding: 2rem 0;
 .whatsapp-button:hover {
     background-color: #128C7E;
 }
+footer {
+    background-color: #55505C;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    display: none;
+}
+footer a{
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -454,7 +479,24 @@ padding: 2rem 0;
     html{
         font-size: 50%;
     }
-  
+    .about .imagelogo {
+        flex-direction: column; /* Mengubah susunan menjadi satu kolom pada layar kecil */
+    }
+
+    .imagelogo .item {
+        width: 100%; /* Mengatur lebar elemen menjadi otomatis */
+        max-width: 100%; /* Batasi lebar elemen menjadi 100% dari parent */
+        text-align: center; /* Pusatkan teks */
+        margin-bottom: 20px; /* Atur margin bawah antar item */
+        
+    }
+
+    .imagelogo img {
+        width: 10%;
+        max-width: 100%; /* Batasi lebar gambar menjadi 100% dari parent */
+        height: auto; /* Biarkan tinggi gambar disesuaikan secara otomatis */
+        margin-bottom: 10px; /* Atur margin bawah untuk gambar */
+    }
 }
 @media (max-width:400px){
     header {
@@ -475,4 +517,10 @@ padding: 2rem 0;
   .contact .row form{
     margin: 3rem 0;
   }
+  .about .imagelogo .item {
+    width: 100%; /* Sesuaikan lebar elemen pada layar kecil */
+    box-sizing: border-box; /* Sesuaikan model box sizing untuk menghindari masalah margin */
+    text-align: center;
+    margin: 10px auto; /* Pusatkan elemen dan atur margin */
+    }
 }

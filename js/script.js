@@ -25,4 +25,25 @@ $('a[href*="#"]').on('click',function(e){
 });
 
 
+$(document).ready(function() {
+    var footer = $("#site-footer");
+
+    $(window).on("scroll", function() {
+        var scrollPos = $(window).scrollTop();
+        var windowHeight = $(window).height();
+        var documentHeight = $(document).height();
+
+        // Jarak dari puncak halaman hingga dasar halaman saat ini
+        var scrollDistance = documentHeight - (scrollPos + windowHeight);
+
+        // Menunjukkan atau menyembunyikan footer pada halaman terakhir
+        if (scrollDistance < 10) {
+            footer.show();
+        } else {
+            footer.hide();
+        }
+    });
+});
+
+
 });

@@ -84,20 +84,6 @@ section{
 .heading span{
     color:var(--yellow);
 }
-.portfolio-heading {
-    text-align: center;
-    margin: 10px 0; /* Atur margin atas dan bawah untuk memberi ruang */
-    padding: 10px 0; /* Padding atas dan bawah */
-    border-top: 2px solid #ccc; /* Garis atas */
-    border-bottom: 2px solid #ccc; /* Garis bawah */
-}
-
-.portfolio-heading h2 {
-    margin: 0; /* Menghilangkan margin default */
-    padding: 10px; /* Padding atas dan bawah untuk h2 */
-    color: #FAF33E;
-    font-size: large;
-}
 header{
     position: fixed;
     top: 0;left: 0;

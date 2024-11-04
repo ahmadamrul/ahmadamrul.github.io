@@ -37,7 +37,7 @@ $(document).ready(function() {
         var scrollDistance = documentHeight - (scrollPos + windowHeight);
 
         // Menunjukkan atau menyembunyikan footer pada halaman terakhir
-        if (scrollDistance < 10) {
+        if (scrollDistance < 5) {
             footer.show();
         } else {
             footer.hide();

@@ -35,7 +35,7 @@ html::-webkit-scrollbar-thumb {
   background: var(--yellow);
 }
 body {
-  background: #34a78a;
+  background: #242e2b;
   overflow-x: hidden;
   padding-left: 35rem;
 }
@@ -91,7 +91,7 @@ header {
   z-index: 1000;
   height: 100%;
   width: 35rem;
-  background: #34a78a;
+  background: #242e2b;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -125,7 +125,7 @@ header .navbar ul li a {
   display: block;
   padding: 1rem;
   margin: 1.5rem 0;
-  background: #277c67;
+  background: #414e4a;
   color: #fff;
   font-size: 2rem;
   border-radius: 5rem;

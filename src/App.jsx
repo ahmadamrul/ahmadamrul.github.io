@@ -20,7 +20,7 @@ import Starfield from './Starfield'
 import CursorPet from './CursorPet'
 import './App.css'
 
-const baseUrl = 'https://ahmadamrul.github.io'
+const baseUrl = import.meta.env.BASE_URL
 
 const skills = [
   { name: 'Unity', Icon: TbBrandUnity },
@@ -187,7 +187,7 @@ function App() {
             Hey, I&apos;m Amrul
           </p>
 
-          <img className="hero-avatar" src={`${baseUrl}/img/me.jpg`} alt="Ahmad Amrul" />
+          <img className="hero-avatar" src={`${baseUrl}img/me.jpg`} alt="Ahmad Amrul" />
 
           <p className="hero-kicker">Ahmad &middot;</p>
           <h1 className="hero-name">Amrul</h1>
@@ -265,7 +265,7 @@ function App() {
           <div className="project-list">
             {projects.map((project) => (
               <a className="project-row" href={project.url} target="_blank" rel="noreferrer" key={project.title}>
-                <img src={`${baseUrl}/img/${project.image}`} alt={project.title} />
+                <img src={`${baseUrl}img/${project.image}`} alt={project.title} />
                 <div className="project-row-body">
                   <h3>{project.title}</h3>
                   <span>Open project &rarr;</span>
